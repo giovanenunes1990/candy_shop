@@ -43,7 +43,7 @@ export const PageBody = styled.div`
     }
 
     @media screen and (max-width: 768px){
-        margin-bottom: 80px;
+        margin-bottom: 120px;
     }
    
 `;
