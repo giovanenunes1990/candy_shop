@@ -41,5 +41,9 @@ export const PageBody = styled.div`
     &::-webkit-scrollbar-thumb{
         background: gray;
     }
+
+    @media screen and (max-width: 768px){
+        margin-bottom: 80px;
+    }
    
 `;
