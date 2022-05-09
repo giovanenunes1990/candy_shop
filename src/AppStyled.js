@@ -2,10 +2,11 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
     display: flex;
-    height: 100vh;
+    max-height: 100vh;
 
     @media screen and (max-width: 768px){
         flex-direction: column-reverse;
+     
     }
 `;
 export const Menu = styled.div` 
@@ -17,6 +18,8 @@ export const Menu = styled.div`
     background: #f00202;
 
     @media screen and (max-width: 768px){
+        position: fixed;
+        bottom: 0;
         flex-direction: row;
         width: 100%;
         padding-top: 10px;

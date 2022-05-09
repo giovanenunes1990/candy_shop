@@ -194,3 +194,25 @@ export const ButtonEnd = styled.button`
      background: white;
      margin: 10px 5%;
 `;
+
+export const CartQtMobile = styled.div`
+     display: none;
+     background: rgba(26, 26, 26, 0.5);
+     color: white;
+     width:22px;
+     height: 22px;
+     border-radius: 50%;
+     text-align: center;
+     position: relative;
+     left: -26px;
+     top: -10px;
+     padding-bottom: 3px;
+    
+
+     @media screen and (max-width: 768px){
+         display: flex;
+         justify-content: center;
+         text-align: center;
+     }
+
+`;

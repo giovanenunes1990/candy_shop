@@ -28,7 +28,7 @@ import {
     Text,
     Price,
     ButtonEnd,
-
+    CartQtMobile,
 
 } from './styled';
 
@@ -130,6 +130,9 @@ export default () => {
         <CartArea show={show}>
             <CartHeader onClick={handleCartClick}>
                 <CartIcon show={show} car src="/assets/cart.png" />
+                {products.length > 0 &&
+                    <CartQtMobile>{products.length}</CartQtMobile>
+                }
                 <CartText show={show}>Meu carrinho ({products.length})</CartText>
                 <CartIcon2 mobile={show} src={show ? '/assets/down.png' : '/assets/up.png'} />
             </CartHeader>
